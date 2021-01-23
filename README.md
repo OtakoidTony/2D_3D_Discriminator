@@ -1,5 +1,5 @@
 # 2D_3D_Discriminator
-2D 일러스트와 3D modelling을 판별하는 프로그램.
+2D 일러스트와 3D modelling 일러스트 \[ex) MMD\] 을 판별하는 프로그램.
 
 ## 폴더 구조
 ```
