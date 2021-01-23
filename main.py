@@ -47,12 +47,12 @@ y = to_categorical(y)
 
 X_train, X_test, y_train, y_test = train_test_split(np.array(X), np.array(y), test_size=0.33, random_state=321)
 
-model.compile(loss='binary_crossentropy',
+model.compile(loss='binary_crossentropy', # 2진 분류이므로 손실함수로 binary_crossentropy 를 사용하였다.
               optimizer='adam',
               metrics=['accuracy'])
 
 history = model.fit(X_train, y_train, epochs=50, batch_size=30)
-result = model.predict(X_test)
+# result = model.predict(X_test)
 loss, acc = model.evaluate(X_test, y_test, verbose=2)
 
 model.save("model/model")  # 로드할 때는 tf.keras.models.load_model('model/model')
