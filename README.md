@@ -1,7 +1,7 @@
 # 2D_3D_Discriminator
 2D 일러스트와 3D modelling을 판별하는 프로그램.
 
-# 폴더 구조
+## 폴더 구조
 ```
 ├─dataset
 │  ├─2d
