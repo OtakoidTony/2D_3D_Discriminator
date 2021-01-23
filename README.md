@@ -15,7 +15,7 @@ python main.py
 model = tf.keras.models.load_model('model/model')
 
 def predict(image):
-    return "2D" if model.predict(np.array([img_to_array(Image.open(image).resize((150, 150)).convert("RGB"))]))[0]>0.5 else "3d"
+    return "2D" if model.predict(np.array([img_to_array(Image.open(image).resize((150, 150)).convert("RGB"))]))[0][0]>0.5 else "3d"
 ```
 
 ## 폴더 구조
