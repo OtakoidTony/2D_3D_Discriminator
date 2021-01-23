@@ -1,6 +1,13 @@
 # 2D_3D_Discriminator
 2D 일러스트와 3D modelling 일러스트 \[ex) MMD\] 을 판별하는 프로그램.
 
+## 실행방법
+```
+python get_dataset_from_gelbooru.py
+python dataset_initiation.py
+python main.py
+```
+
 ## 폴더 구조
 ```
 ├─dataset
